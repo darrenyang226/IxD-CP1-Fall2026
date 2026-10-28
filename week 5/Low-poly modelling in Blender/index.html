@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading responses</title>
+</head>
+
+<body>
+
+    <header>
+        Low-poly modelling in Blender
+    </header>
+
+    <main>
+        <h1>
+       Bird of Paradise, Golden Pothos, and Plant Stand.
+        </h1>
+        
+        Inspired by my own houseplants, I decided to create two potted plants (Bird of Paradise and Golden Pothos) with a wooden plank plant stand to create a garden scene.
+        Here’s my initial sketch and idea:
+
+        <img src="images/plant sketch.png" alt="step0">
+
+        To explore different ways of creating plants, I followed several YouTube tutorials and eventually settled on this one.
+        Following the tutorial, I started by modeling the shape of the pot, creating uneven surfaces to resemble soil, and using a Bézier curve to shape the stems of the Golden Pothos.
+        <img src="images/plant.v2.step1.png" alt="step1">
+
+        By using “Particle System”, I was able to use “Hair” to create paths for the leaves to grow on.
+        <img src="images/plant.v2.step2.png" alt="step2">
+        
+        In order to make the rendering more realistic, I traced a pothos leaf based on a reference image that I would use for shading. In the shader editor, I was able to apply the leaf image as a material for the leaf shape that I just traced.
+         <img src="images/plant.v2.step3.png" alt="step3">
+         <img src="images/plant.v2.step4.png" alt="step4">
+        
+        Moving on to the Bird of Paradise plant, I started by modifying the duplicated plant pot. I shaped the stems using cylinder objects and created the leaves using plane objects. I then applied shading to the leaves in the Shading Editor.
+        <img src="images/plant.v2.step5.png" alt="step5">
+
+        Then, I moved on to creating the plant stand. The stand was created by using loop cuts and excluding the legs for the stand.
+        <img src="images/plant.v2.step6.png" alt="step6">
+        <img src="images/plant.v2.step7.png" alt="step7">
+       
+        I started by applying an HDRI to the world, but I realized that the scene looked distorted and misaligned with the origin, making the objects appear as if they were floating in midair. To create a more realistic environment with proper alignment to the origin, I followed a tutorial on creating a dome to serve as the environment for the shading. After creating the dome and flipping the faces inward, I went into the Shader Editor and applied nodes that allowed me to see how the inward-facing surfaces looked from the inside. I then adjusted the shading along the Z-axis to better align the ground with the origin.
+        <img src="images/plant.v2.step9.png" alt="step9">
+        
+        As I was attempting my first render, I noticed a large gray obstruction in front of the camera. After discussing the issue with my professor, I realized that it was caused by the size of the frame, and I was able to fix it.
+        <img src="images/plant.v2.step10.png" alt="step10">
+         
+        Here are my 3 final renders:
+        <img src="images/plant.v2.render.1.png" alt="render1">
+        <img src="images/plant.v2.render.2.png" alt="render2">
+        <img src="images/plant.v2.render.3.png" alt="render3">
+    </main>
+    
+</body>
+</html>
